@@ -1,0 +1,9 @@
+---
+title: "Research"
+output: html_document
+---
+
+Here I leave a short showcase of my completed and current research.
+
+###  Territorial Socio-Economic Impacts of Forestry Expansion in Chile
+
