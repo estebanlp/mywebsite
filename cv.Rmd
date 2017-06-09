@@ -2,7 +2,4 @@
 title: "Curriculum Vitae"
 output: html_document
 ---
-<img src="./files/02 ELopezCV_Illinois.pdf" alt="some text"  width="4200" height="4200">
-
-
-
+<img src="./files/02 ELopezCV_Illinois.pdf"  width="4200" height="4200">
