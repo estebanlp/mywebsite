@@ -1,4 +1,16 @@
-## Welcome to GitHub Pages
+## Esteban Lopez Ochoa
+
+```markdown
+![Image](http://25.media.tumblr.com/tumblr_lbuqd9J9MS1qz71rio1_500.jpg)
+```
+Esteban Lopez Ochoa 
+Ph.D. in Regional Planning 2016
+Department of Urban and Regional Planning
+Regional Economics Applications Laboratory 
+R | E | A | L
+University of Illinois at Urbana Champaign
+lopezoch@illinois.edu
+info@estebanlopez.net
 
 You can use the [editor on GitHub](https://github.com/estebanlp/mywebsite/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
