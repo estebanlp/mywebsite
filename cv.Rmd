@@ -3,3 +3,5 @@ title: "Curriculum Vitae"
 output: html_document
 ---
 
+![](/files/02 ELopezCV_Illinois.pdf)
+
