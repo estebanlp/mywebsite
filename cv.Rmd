@@ -2,5 +2,100 @@
 title: "Curriculum Vitae"
 output: html_document
 ---
-<img src="/files/02_ELopezCV_Illinois_1.pdf"  width="4200" height="4200">
-<img src="/files/02_ELopezCV_Illinois_2.pdf"  width="4200" height="4200">
+
+#### DISSERTATION TITLE: 
+*“Three Essays Revisiting Old Housing Issues on New Contexts: Understanding the Demand for Housing Attributes in Developing Countries, the Construction of Price Indices with Higher Disaggregation Levels, and Residential Mobility and Location Choice under Displacement Scenarios”*
+
++ Degree:          				Ph.D. in Regional Planning
++ Date of Completion: 		December 2016
++ Principal Advisor: 			Geoffrey J.D. Hewings
++ Committee Members: 			Katherine Baylis, Daniel McMillen & Andrew Greenlee
+
+#### PRE-DOCTORAL STUDIES: 		
+**DEGREE**            | 	**DATE**      |		**FIELD**
+----------------------|-----------------|----------------------------------------
+University of Illinois (UIUC)		M.S.	|	May, 2016 |	Applied & Agricultural Economics
+Universidad Católica del Norte (UCN)	M.S.	|	Dec, 2010 |	Regional Science
+Universidad de Tarapacá (UTA)		B.A.	|	Dec, 2008	| Business Management
+
+#### FIELDS OF CONCENTRATION: 
+PRIMARY 		|		SECONDARY|
+------------|---------|
+Housing Economics			|		Applied econometrics |
+Regional and Urban Economics		|	Spatial Analysis|
+
+#### WORKING PAPERS: 
++ _“Housing Price Indices for Small Spatial Units”_ with Geoffrey Hewings Revise and Resumbit in Regional Science and Urban Economics
+
++ _“House Prices and School Choice: Evidence from the Chicago’s Magnet Schools Proximity Lottery”_ with Leonardo Bonilla and Daniel McMillen. In submission process to the Journal of Urban Economics.
+
++ _“Revealing Migrant pathways in the formal labor market: The case of Sweden”_ con Mikaela Backman (Jönköping University, Suecia) y Francisco Rowe (University of Liverpool, UK). Submitted to the Journal of Small Business Economics
+
+#### PUBLICATIONS:
+
+##### 2017
++ _Lopez, E._ & Paredes, D. (fothcomming) _“Towards Housing Policies that Consider Households’ Preferences: Estimating the Demand for Housing Attributes in Chile”_ with Dusan Paredes. International Journal of Stretegic and Property Management 
++ Kleasson, J., _Lopez, E._ & Öner, Ö. (forthcoming) _“Estimating the wage premium of delayed retirement and its variations across space”_ with  and Özge Öner Jönkoping International Business School, Sweden. Tijdschrift voor economische en sociale geografie
+
+##### 2016
++ _Lopez, E._ & Greenlee, A. (2016) _“Residential Mobility and Location Choice as the Product of Housing Displacement: An ex ante Analysis”_. Applied Geography, Vol. 75. Pages 156-175.
+
+##### Pre-2016
++ _Lopez, E._ & Aroca, P. (2012) _“Estimación de la inflación regional de los precios de la vivienda en Chile”_.  Trimestre Económico, Vol. LXXIX, 315, pp. 601-630.
+
+#### RESEARCH IN PROGRESS
+“Commercial forestry expansion and local economic outcomes: The case of Chile” con Patricio Aroca (Universidad Adolfo Ibáñez, Chile) y Leonardo Bonilla (Banco de la República, Colombia)
+
+#### SCHOLARSHIPS, HONORS, AND AWARDS:
++ 2016		 :  North American Regional Science Council (NARSC): First Place Student-lead Paper
++ 2016		 :  Western Regional Science Association (WRSA): Charles Tiebout Student Paper Finalist
++ 2015		 :  Centre for Spatial Economics and Entrepreneurship,Jönköping University: Research Fellow
++ 2013-2015:  Lincoln Institute of Land Policy: Research Mentee in research project with Dusan Paredes
++ 2013-2014:	Regional Economics Applications Laboratory: Philip Israilevich Distinguished Research Fellow
++ 2011-2014:	Fulbright & MIDEPLAN-Chile: Ph.D. Student grantee
++ 2009		 :  Universidad Católica del Norte: 3rd Place in academic achievement 
++ 2008-2010:  Universidad Católica del Norte: M.S. Student grantee
++ 2007		 :  Universidad de Tarapacá: Best academic performance award
+
+#### TEACHING EXPERIENCE: 
++ Instructor:		Business Location Decisions (GEOG 205). Department of Geography, UIUC. Fall 2016. 
+                Business Location Decisions (GEOG 205). Department of Geography, UIUC. Fall 2015. 
++ Introduction to Economics. Department of Journalism, UCN. 2009-1
++ Teaching Assistant:	Econometric Applications. Department of Economics, UCN. 2008-1
+			                Optimization Methods. Department of Economics, UCN. 2008-2
++ Microeconomics II. Department of Economics, UCN. 2009-2
+
+#### RELEVANT POSITIONS: 
++ 2011-2016:	Research Assistant. Regional Economics Applications Laboratory. UIUC, USA.
++ 2014-2015:	Graduate Assistant. Department of Urban and Regional Planning. UIUC, USA.
++ 2009-2010: 	Project Engineer. Regional Tourism Observatory. Antofagasta, Chile
++ 2008-2009:	Research Assistant. Institute of Applied Regional Economics Research (IDEAR), UCN, Chile
+
+#### CONFERENCE AND WORKSHOP PRESENTATIONS:
++ North American Regional Science Council (NARSC) Annual Meeting, Portland, OR. “House Prices and School Choice: Evidence from the Chicago’s Magnet Schools Proximity Lottery” (Nov. 2016)
++ North American Regional Science Council (NARSC) Annual Meeting, Portland, OR. “Residential Mobility and Location Choice as the Product of Housing Displacement: An ex ante Analysis” (Nov. 2016)
++ North American Regional Science Council (NARSC) Annual Meeting, Portland, OR. “Residential Mobility and Location Choice as the Product of Housing Displacement: An ex ante Analysis” (Nov. 2015)
++ Housing in an Unequal World, RC43. Chicago, IL. “Residential Mobility and Location Choice as the Product of Housing Displacement: An ex ante Analysis” (Sep. 2015)
++ Workshop on Ageing and the Economy. Jönköping International Business School. “Who stays longer? Individual and Geographical factors influencing the timing of retirement” (Jun, 2015) 
++ 8th Midwest Graduate Student Summit (AERUS), Purdue University. “House prices and school choice: Evidence from Chicago’s magnet schools proximity lottery” (Apr. 2015)
++ North American Regional Science Council (NARSC) Annual Meeting, Washington, DC. “Estimating the Demand for Housing Attributes in Developing Countries: The Case of Chile” (Nov. 2014)
++ Research Seminar: Land Policy and Urban Development in Latin America. Lincoln Institute of Land Policy. Panamá City, Panamá.  “A three-step model for estimating the demand for housing attributes in Chile: Insights of price and income elasticities in a developing economy” (Oct. 2014)
++ North American Regional Science Council (NARSC) Annual Meeting, Washington, DC. “Estimating Housing Price Indices for 10 MSAs for Illinois” (Nov. 2012)
++ North American Regional Science Council (NARSC) Annual Meeting, Washington, DC. “Housing Price Inflation in the Chilean Economy” (Nov. 2011)
+
+####OTHER PROFESSIONAL ACTIVITIES
++ Reviewer:               Journal of Regional and Urban Economics (2014-present)
++ Student General:	      Regional Economics Applications Laboratory, UIUC, 2013-14
++ Conference Organizer:   7th Midwest Graduate Student Summit (AERUS), UIUC, 2014
++ Treasurer:              Doctoral Students in Urban Planning (DSUP), UIUC, 2012-14
+
+#### OTHER INFORMATION: 
++ Affiliations: 	American Planning Association (APA); North American Regional Science Association (NARSC),                      Western Regional Science Association (WRSA); Regional Science Association International                       (RSAI); Chilean Regional Science Association (SOCHER)
++ Languages: 	English (fluent), Spanish (Native)
++ Software: 	Proficient: R, STATA, SPSS, Ucinet 6.0, ArcGIS; 
+              Above the average: MATLAB, Geoda, Netlogo, Mathematica.
+
+#### REFERENCES: 
++ Prof. Geoffrey Hewings, University of Illinois, hewings@illinois.edu, 217-333-4740
++ Prof. Daniel McMillen, University of Illinois, mcmillen@illinois.edu
++ Prof. Patricio Aroca, Universidad Adolfo Ibañez, Chile, patricio.aroca@uai.cl
