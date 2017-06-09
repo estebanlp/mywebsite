@@ -1,0 +1,9 @@
+name: "mywebsite"
+output_dir: "."
+navbar:
+  title: "Esteban Lopez Ochoa"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "About"
+      href: about.html

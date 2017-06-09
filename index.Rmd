@@ -1,0 +1,18 @@
+---
+title: "Esteban Lopez Ochoa"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Esteban Lopez Ochoa 
+Ph.D. in Regional Planning 2016
+Department of Urban and Regional Planning
+Regional Economics Applications Laboratory 
+R | E | A | L
+University of Illinois at Urbana Champaign
+<lopezoch@illinois.edu>
+<info@estebanlopez.net>
+![Image](http://25.media.tumblr.com/tumblr_lbuqd9J9MS1qz71rio1_500.jpg)
