@@ -1,5 +1,6 @@
 name: "mywebsite"
 output_dir: "."
+theme: jekyll-theme-cayman
 navbar:
   title: "Esteban Lopez Ochoa"
   left:
