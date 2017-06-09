@@ -5,5 +5,17 @@ output: html_document
 
 Here I leave a short showcase of my completed and current research.
 
-###  Territorial Socio-Economic Impacts of Forestry Expansion in Chile
+## Spatial Inequalities
+###  <a href="forestry1.html">Territorial Socio-Economic Impacts of Forestry Expansion in Chile </a>
 
+
+## Housing
+###  <a href="hprices1.html">Housing Prices for Small Spatial Units</a>
+
+###  <a href="hattributes1.html">Estimating the Demand for Housing Attributes in Chile</a>
+
+## Urban Dynamics
+
+###  <a href="uresmobBristol1.html">An Ex-Ante Analysis of Location Choices due to housing Displacement: The case of Bristol Place</a>
+
+###  <a href="umigration1.html">Longitudinal Analysis of Carreer Trajectories and outcomes of Forced Migrants in Sweden</a>
