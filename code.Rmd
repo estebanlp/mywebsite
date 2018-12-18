@@ -3,7 +3,6 @@ title: "Code"
 output: html_document
 ---
 
-<<<<<<< HEAD
 I mostly use R Statistical Software for my research. In some ocasions I have developed small applications of R for my research projects. Here I leave some examples of them.
 
 ## Election County Maps in Chile
@@ -29,5 +28,4 @@ Motivated by the very interesting results of the last presidential elections in 
 During my time as the <a href="http://www.real.illinois.edu/alumni/">REAL General at UIUC</a> I conducted a small survey of the REAL alumni and present students and fellows (better know as the REAL Mafia) to assess how REAL has spurred friendship and academic collaboration. This small project resulted in a very interesting application of the use of R as a tool for both doing the analysis and the interactive presentation using Slidify. The presentation is also available at GitHub: <a href="https://github.com/estebanlp/REALNetworkAnalysis"> https://github.com/estebanlp/REALNetworkAnalysis</a>
 
 
-=======
->>>>>>> parent of 31f41e3... adding code website
+
