@@ -3,11 +3,15 @@ title: "Teaching"
 output: html_document
 ---
 
+<<<<<<< HEAD
 
 
 ####Instructor:
 Department/University           | Course                                                | Date
 --------------------------------|-------------------------------------------------------|--------------------------------
+Department of Economics, UAI, Chile.  | Intro to Economics II (ECO 101).               | Spring 2017.
+Department of Economics, UAI, Chile.  | Microeconomics II (ECO 201).               | Spring 2017.
+Department of Economics, UAI, Chile.  | Microeconomics II (ECO 201).               | Fall 2017.
 Department of Geography, UIUC.  | Business Location Decisions ([GEOG 205](https://courses.illinois.edu/schedule/2016/fall/GEOG/205)).               | Fall 2016.
 Department of Geography, UIUC.  | Business Location Decisions ([GEOG 205](https://courses.illinois.edu/schedule/2015/fall/GEOG/205)).               | Fall 2015.
 
@@ -18,3 +22,5 @@ Department/University  | Course:
 Department of Economics, UCN    | Econometric Applications.                             | 2008-1
 Department of Economics, UCN    | Optimization Methods.                                 | 2008-1
 Department of Economics, UCN    | Microeconomics II.                                   | 2008-1
+=======
+>>>>>>> parent of 52dd1c0... adding teaching and bio (incomplete)
