@@ -1,21 +1,26 @@
 ---
-title: ""
-output: html_document
+layout: default
 ---
+<center>
+</b></br>
+</b></br>
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+![](https://negocios.uai.cl/assets/uploads/2017/12/esteban-lopez-232x232-c-default.jpg)
 
-<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div dir="ltr"><div style="display:block;margin-right:auto;margin-left:auto;text-align:center"><table><tbody><tr><td style="width:554px;height:454px"><div style="display:block;margin-right:auto;margin-left:auto;text-align:center"><div style="display:block;text-align:center;margin-right:auto;margin-left:auto"><a href="http://en.wikipedia.org/wiki/M._C._Escher" imageanchor="1" rel="nofollow"><img border="0" src="http://25.media.tumblr.com/tumblr_lbuqd9J9MS1qz71rio1_500.jpg" /></a></div><br /></div>
-</td>
-<td style="width:530px;height:454px"><b><div style="display:block;text-align:center;margin-right:auto;margin-left:auto"><a href="https://negocios.uai.cl/assets/uploads/2017/12/esteban-lopez-232x232-c-default.jpg" imageanchor="1" rel="nofollow"><img border="0" height="320" src="https://negocios.uai.cl/assets/uploads/2017/12/esteban-lopez-232x232-c-default.jpg" width="269" /></a></div><br />
-Esteban Lopez Ochoa</b> <br />
-Profesor Asistente</b> <br />
-Centro de Economía y Política Regional (CEPR)</b> <br />
-Escuela de Negocios</b> <br />
-Universidad Adolfo Ibáñez</b> <br />
-Viña del Mar, Chile</b> <br />
+</b></br>
+
+###Esteban López Ochoa
+</b>Profesor Asistente <br />
+</b>[Centro de Economía y Política Regional (CEPR)](http://cepr.uai.cl/equipo/esteban-lopez/) <br />
+</b>[Escuela de Negocios](https://negocios.uai.cl/profesor/esteban-lopez-ochoa/)<br/>
+</b>Universidad Adolfo Ibáñez <br />
+</b>Viña del Mar, Chile <br />
 esteban.lopez at uai.cl
-</td></tr></tbody></table>
++56 32 250 3740
 
+
+![http://github.com/estebanlp](images/GitHub-Mark-32px.png){width=15px}
+
+![https://twitter.com/@elopez8a](images/twitter_logo.png){width=15px}
+
+</center>
