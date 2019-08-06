@@ -1,6 +1,8 @@
 ---
 output: html_document
 ---
+</b></br>
+</b></br>
 
 ####Instructor:
 Department/University           | Course                                                | Date
