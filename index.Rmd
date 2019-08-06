@@ -15,9 +15,10 @@ layout: default
 </b>[Escuela de Negocios](https://negocios.uai.cl/profesor/esteban-lopez-ochoa/)<br/>
 </b>Universidad Adolfo Ibáñez <br />
 </b>Viña del Mar, Chile <br />
-esteban.lopez at uai.cl
-+56 32 250 3740
+</b>esteban.lopez at uai.cl<br />
+</b>+56 32 250 3740<br />
 
+[Curriculum Vitae](docs/Esteban_Lopez_CV.pdf)
 
 ![http://github.com/estebanlp](images/GitHub-Mark-32px.png){width=15px}
 

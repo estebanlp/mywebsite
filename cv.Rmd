@@ -1,5 +1,0 @@
----
-template: secondary_pages
----
-
-You can find my CV [here](docs/Esteban_Lopez_CV.pdf)
