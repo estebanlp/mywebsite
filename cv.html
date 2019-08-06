@@ -11,7 +11,7 @@
 
 
 
-<title>Curriculum Vitae</title>
+<title></title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -20,8 +20,8 @@
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/highlightjs-1.1/default.css" rel="stylesheet" />
-<script src="site_libs/highlightjs-1.1/highlight.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -30,10 +30,12 @@
   }
 </style>
 <script type="text/javascript">
-if (window.hljs && document.readyState && document.readyState === "complete") {
-   window.setTimeout(function() {
-      hljs.initHighlighting();
-   }, 0);
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
 }
 </script>
 
@@ -88,8 +90,14 @@ img {
 .tabbed-pane {
   padding-top: 12px;
 }
+.html-widget {
+  margin-bottom: 20px;
+}
 button.code-folding-btn:focus {
   outline: none;
+}
+summary {
+  display: list-item;
 }
 </style>
 
@@ -105,7 +113,6 @@ body {
   padding-top: 56px;
   margin-top: -56px;
 }
-
 .section h2 {
   padding-top: 56px;
   margin-top: -56px;
@@ -125,6 +132,43 @@ body {
 .section h6 {
   padding-top: 56px;
   margin-top: -56px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -146,18 +190,77 @@ $(document).ready(function () {
 });
 </script>
 
-
 <div class="container-fluid main-container">
 
 <!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
 <script>
 $(document).ready(function () {
   window.buildTabsets("TOC");
 });
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
 </script>
 
 <!-- code folding -->
-
 
 
 
@@ -179,9 +282,6 @@ $(document).ready(function () {
   <a href="index.html">Home</a>
 </li>
 <li>
-  <a href="about.html">About</a>
-</li>
-<li>
   <a href="research.html">Research</a>
 </li>
 <li>
@@ -192,6 +292,9 @@ $(document).ready(function () {
 </li>
 <li>
   <a href="teaching.html">Teaching</a>
+</li>
+<li>
+  <a href="about.html">About</a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -205,182 +308,11 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Curriculum Vitae</h1>
 
 </div>
 
 
-<div id="dissertation-title" class="section level4">
-<h4>DISSERTATION TITLE:</h4>
-<p><em>“Three Essays Revisiting Old Housing Issues on New Contexts: Understanding the Demand for Housing Attributes in Developing Countries, the Construction of Price Indices with Higher Disaggregation Levels, and Residential Mobility and Location Choice under Displacement Scenarios”</em></p>
-<ul>
-<li>Degree: Ph.D. in Regional Planning</li>
-<li>Date of Completion: December 2016</li>
-<li>Principal Advisor: Geoffrey J.D. Hewings</li>
-<li>Committee Members: Katherine Baylis, Daniel McMillen &amp; Andrew Greenlee</li>
-</ul>
-</div>
-<div id="pre-doctoral-studies" class="section level4">
-<h4>PRE-DOCTORAL STUDIES:</h4>
-<table>
-<colgroup>
-<col width="28%" />
-<col width="21%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><strong>DEGREE</strong></th>
-<th><strong>DATE</strong></th>
-<th><strong>FIELD</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>University of Illinois (UIUC) M.S.</td>
-<td>May, 2016</td>
-<td>Applied &amp; Agricultural Economics</td>
-</tr>
-<tr class="even">
-<td>Universidad Católica del Norte (UCN) M.S.</td>
-<td>Dec, 2010</td>
-<td>Regional Science</td>
-</tr>
-<tr class="odd">
-<td>Universidad de Tarapacá (UTA) B.A.</td>
-<td>Dec, 2008</td>
-<td>Business Management</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="fields-of-concentration" class="section level4">
-<h4>FIELDS OF CONCENTRATION:</h4>
-<table>
-<thead>
-<tr class="header">
-<th>PRIMARY</th>
-<th>SECONDARY</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Housing Economics</td>
-<td>Applied econometrics</td>
-</tr>
-<tr class="even">
-<td>Regional and Urban Economics</td>
-<td>Spatial Analysis</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="working-papers" class="section level4">
-<h4>WORKING PAPERS:</h4>
-<ul>
-<li><p><em>“Housing Price Indices for Small Spatial Units”</em> with Geoffrey Hewings Revise and Resumbit in Regional Science and Urban Economics</p></li>
-<li><p><em>“House Prices and School Choice: Evidence from the Chicago’s Magnet Schools Proximity Lottery”</em> with Leonardo Bonilla and Daniel McMillen. In submission process to the Journal of Urban Economics.</p></li>
-<li><p><em>“Revealing Migrant pathways in the formal labor market: The case of Sweden”</em> con Mikaela Backman (Jönköping University, Suecia) y Francisco Rowe (University of Liverpool, UK). Submitted to the Journal of Small Business Economics</p></li>
-</ul>
-</div>
-<div id="publications" class="section level4">
-<h4>PUBLICATIONS:</h4>
-<div id="section" class="section level5">
-<h5>2017</h5>
-<ul>
-<li><em>Lopez, E.</em> &amp; Paredes, D. (fothcomming) <em>“Towards Housing Policies that Consider Households’ Preferences: Estimating the Demand for Housing Attributes in Chile”</em> with Dusan Paredes. International Journal of Stretegic and Property Management</li>
-<li>Kleasson, J., <em>Lopez, E.</em> &amp; Öner, Ö. (forthcoming) <em>“Estimating the wage premium of delayed retirement and its variations across space”</em> with and Özge Öner Jönkoping International Business School, Sweden. Tijdschrift voor economische en sociale geografie</li>
-</ul>
-</div>
-<div id="section-1" class="section level5">
-<h5>2016</h5>
-<ul>
-<li><em>Lopez, E.</em> &amp; Greenlee, A. (2016) <em>“Residential Mobility and Location Choice as the Product of Housing Displacement: An ex ante Analysis”</em>. Applied Geography, Vol. 75. Pages 156-175.</li>
-</ul>
-</div>
-<div id="pre-2016" class="section level5">
-<h5>Pre-2016</h5>
-<ul>
-<li><em>Lopez, E.</em> &amp; Aroca, P. (2012) <em>“Estimación de la inflación regional de los precios de la vivienda en Chile”</em>. Trimestre Económico, Vol. LXXIX, 315, pp. 601-630.</li>
-</ul>
-</div>
-</div>
-<div id="research-in-progress" class="section level4">
-<h4>RESEARCH IN PROGRESS</h4>
-<p>“Commercial forestry expansion and local economic outcomes: The case of Chile” con Patricio Aroca (Universidad Adolfo Ibáñez, Chile) y Leonardo Bonilla (Banco de la República, Colombia)</p>
-</div>
-<div id="scholarships-honors-and-awards" class="section level4">
-<h4>SCHOLARSHIPS, HONORS, AND AWARDS:</h4>
-<ul>
-<li>2016 : North American Regional Science Council (NARSC): First Place Student-lead Paper</li>
-<li>2016 : Western Regional Science Association (WRSA): Charles Tiebout Student Paper Finalist</li>
-<li>2015 : Centre for Spatial Economics and Entrepreneurship,Jönköping University: Research Fellow</li>
-<li>2013-2015: Lincoln Institute of Land Policy: Research Mentee in research project with Dusan Paredes</li>
-<li>2013-2014: Regional Economics Applications Laboratory: Philip Israilevich Distinguished Research Fellow</li>
-<li>2011-2014: Fulbright &amp; MIDEPLAN-Chile: Ph.D. Student grantee</li>
-<li>2009 : Universidad Católica del Norte: 3rd Place in academic achievement</li>
-<li>2008-2010: Universidad Católica del Norte: M.S. Student grantee</li>
-<li>2007 : Universidad de Tarapacá: Best academic performance award</li>
-</ul>
-</div>
-<div id="teaching-experience" class="section level4">
-<h4>TEACHING EXPERIENCE:</h4>
-<ul>
-<li>Instructor: Business Location Decisions (GEOG 205). Department of Geography, UIUC. Fall 2016. Business Location Decisions (GEOG 205). Department of Geography, UIUC. Fall 2015.</li>
-<li>Introduction to Economics. Department of Journalism, UCN. 2009-1</li>
-<li>Teaching Assistant: Econometric Applications. Department of Economics, UCN. 2008-1 Optimization Methods. Department of Economics, UCN. 2008-2</li>
-<li>Microeconomics II. Department of Economics, UCN. 2009-2</li>
-</ul>
-</div>
-<div id="relevant-positions" class="section level4">
-<h4>RELEVANT POSITIONS:</h4>
-<ul>
-<li>2011-2016: Research Assistant. Regional Economics Applications Laboratory. UIUC, USA.</li>
-<li>2014-2015: Graduate Assistant. Department of Urban and Regional Planning. UIUC, USA.</li>
-<li>2009-2010: Project Engineer. Regional Tourism Observatory. Antofagasta, Chile</li>
-<li>2008-2009: Research Assistant. Institute of Applied Regional Economics Research (IDEAR), UCN, Chile</li>
-</ul>
-</div>
-<div id="conference-and-workshop-presentations" class="section level4">
-<h4>CONFERENCE AND WORKSHOP PRESENTATIONS:</h4>
-<ul>
-<li>North American Regional Science Council (NARSC) Annual Meeting, Portland, OR. “House Prices and School Choice: Evidence from the Chicago’s Magnet Schools Proximity Lottery” (Nov. 2016)</li>
-<li>North American Regional Science Council (NARSC) Annual Meeting, Portland, OR. “Residential Mobility and Location Choice as the Product of Housing Displacement: An ex ante Analysis” (Nov. 2016)</li>
-<li>North American Regional Science Council (NARSC) Annual Meeting, Portland, OR. “Residential Mobility and Location Choice as the Product of Housing Displacement: An ex ante Analysis” (Nov. 2015)</li>
-<li>Housing in an Unequal World, RC43. Chicago, IL. “Residential Mobility and Location Choice as the Product of Housing Displacement: An ex ante Analysis” (Sep. 2015)</li>
-<li>Workshop on Ageing and the Economy. Jönköping International Business School. “Who stays longer? Individual and Geographical factors influencing the timing of retirement” (Jun, 2015)</li>
-<li>8th Midwest Graduate Student Summit (AERUS), Purdue University. “House prices and school choice: Evidence from Chicago’s magnet schools proximity lottery” (Apr. 2015)</li>
-<li>North American Regional Science Council (NARSC) Annual Meeting, Washington, DC. “Estimating the Demand for Housing Attributes in Developing Countries: The Case of Chile” (Nov. 2014)</li>
-<li>Research Seminar: Land Policy and Urban Development in Latin America. Lincoln Institute of Land Policy. Panamá City, Panamá. “A three-step model for estimating the demand for housing attributes in Chile: Insights of price and income elasticities in a developing economy” (Oct. 2014)</li>
-<li>North American Regional Science Council (NARSC) Annual Meeting, Washington, DC. “Estimating Housing Price Indices for 10 MSAs for Illinois” (Nov. 2012)</li>
-<li>North American Regional Science Council (NARSC) Annual Meeting, Washington, DC. “Housing Price Inflation in the Chilean Economy” (Nov. 2011)</li>
-</ul>
-</div>
-<div id="other-professional-activities" class="section level4">
-<h4>OTHER PROFESSIONAL ACTIVITIES</h4>
-<ul>
-<li>Reviewer: Journal of Regional and Urban Economics (2014-present)</li>
-<li>Student General: Regional Economics Applications Laboratory, UIUC, 2013-14</li>
-<li>Conference Organizer: 7th Midwest Graduate Student Summit (AERUS), UIUC, 2014</li>
-<li>Treasurer: Doctoral Students in Urban Planning (DSUP), UIUC, 2012-14</li>
-</ul>
-</div>
-<div id="other-information" class="section level4">
-<h4>OTHER INFORMATION:</h4>
-<ul>
-<li>Affiliations: American Planning Association (APA); North American Regional Science Association (NARSC), Western Regional Science Association (WRSA); Regional Science Association International (RSAI); Chilean Regional Science Association (SOCHER)</li>
-<li>Languages: English (fluent), Spanish (Native)</li>
-<li>Software: Proficient: R, STATA, SPSS, Ucinet 6.0, ArcGIS; Above the average: MATLAB, Geoda, Netlogo, Mathematica.</li>
-</ul>
-</div>
-<div id="references" class="section level4">
-<h4>REFERENCES:</h4>
-<ul>
-<li>Prof. Geoffrey Hewings, University of Illinois, <a href="mailto:hewings@illinois.edu">hewings@illinois.edu</a>, 217-333-4740</li>
-<li>Prof. Daniel McMillen, University of Illinois, <a href="mailto:mcmillen@illinois.edu">mcmillen@illinois.edu</a></li>
-<li>Prof. Patricio Aroca, Universidad Adolfo Ibañez, Chile, <a href="mailto:patricio.aroca@uai.cl">patricio.aroca@uai.cl</a></li>
-</ul>
-</div>
+<p>You can find my CV <a href="docs/Esteban_Lopez_CV.pdf">here</a></p>
 
 
 
@@ -405,7 +337,7 @@ $(document).ready(function () {
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
 </script>
