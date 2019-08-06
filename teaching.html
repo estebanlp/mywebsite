@@ -11,7 +11,7 @@
 
 
 
-<title>Teaching</title>
+<title></title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -20,8 +20,8 @@
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/highlightjs-1.1/default.css" rel="stylesheet" />
-<script src="site_libs/highlightjs-1.1/highlight.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -30,10 +30,12 @@
   }
 </style>
 <script type="text/javascript">
-if (window.hljs && document.readyState && document.readyState === "complete") {
-   window.setTimeout(function() {
-      hljs.initHighlighting();
-   }, 0);
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
 }
 </script>
 
@@ -88,8 +90,14 @@ img {
 .tabbed-pane {
   padding-top: 12px;
 }
+.html-widget {
+  margin-bottom: 20px;
+}
 button.code-folding-btn:focus {
   outline: none;
+}
+summary {
+  display: list-item;
 }
 </style>
 
@@ -105,7 +113,6 @@ body {
   padding-top: 56px;
   margin-top: -56px;
 }
-
 .section h2 {
   padding-top: 56px;
   margin-top: -56px;
@@ -125,6 +132,43 @@ body {
 .section h6 {
   padding-top: 56px;
   margin-top: -56px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -146,18 +190,77 @@ $(document).ready(function () {
 });
 </script>
 
-
 <div class="container-fluid main-container">
 
 <!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
 <script>
 $(document).ready(function () {
   window.buildTabsets("TOC");
 });
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
 </script>
 
 <!-- code folding -->
-
 
 
 
@@ -179,19 +282,16 @@ $(document).ready(function () {
   <a href="index.html">Home</a>
 </li>
 <li>
-  <a href="about.html">About</a>
-</li>
-<li>
   <a href="research.html">Research</a>
 </li>
 <li>
-  <a href="cv.html">CV</a>
+  <a href="teaching.html">Teaching</a>
 </li>
 <li>
   <a href="code.html">Code</a>
 </li>
 <li>
-  <a href="teaching.html">Teaching</a>
+  <a href="about.html">About</a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -205,12 +305,10 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Teaching</h1>
 
 </div>
 
 
-<<<<<<< HEAD
 <div id="instructor" class="section level4">
 <h4>Instructor:</h4>
 <table>
@@ -229,25 +327,40 @@ $(document).ready(function () {
 <tbody>
 <tr class="odd">
 <td>Department of Economics, UAI, Chile.</td>
-<td>Intro to Economics II (ECO 101).</td>
-<td>Spring 2017.</td>
+<td>Data Science for Economics and Business. (w/ JF)</td>
+<td>Spring 2019</td>
 </tr>
 <tr class="even">
 <td>Department of Economics, UAI, Chile.</td>
-<td>Microeconomics II (ECO 201).</td>
+<td>Microeconomics II (ECO 211).</td>
+<td>2017 - present</td>
+</tr>
+<tr class="odd">
+<td>Department of Economics, UAI, Chile.</td>
+<td>Microeconomics I (ECO 201).</td>
+<td>2018 - present</td>
+</tr>
+<tr class="even">
+<td>Department of Economics, UAI, Chile.</td>
+<td>Intro to Economics II (ECO 101).</td>
 <td>Spring 2017.</td>
 </tr>
 <tr class="odd">
 <td>Department of Economics, UAI, Chile.</td>
-<td>Microeconomics II (ECO 201).</td>
-<td>Fall 2017.</td>
+<td>R programing course for Spatial Data Analysis</td>
+<td>2017 - present.</td>
 </tr>
 <tr class="even">
+<td>Department of Economics, UAI, Chile.</td>
+<td>Workshop: Introduction to R programing</td>
+<td>2017 - present.</td>
+</tr>
+<tr class="odd">
 <td>Department of Geography, UIUC.</td>
 <td>Business Location Decisions (<a href="https://courses.illinois.edu/schedule/2016/fall/GEOG/205">GEOG 205</a>).</td>
 <td>Fall 2016.</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Department of Geography, UIUC.</td>
 <td>Business Location Decisions (<a href="https://courses.illinois.edu/schedule/2015/fall/GEOG/205">GEOG 205</a>).</td>
 <td>Fall 2015.</td>
@@ -255,8 +368,8 @@ $(document).ready(function () {
 </tbody>
 </table>
 </div>
-<div id="teaching-assistant" class="section level4">
-<h4>Teaching Assistant:</h4>
+<div id="teaching-assistantships" class="section level4">
+<h4>Teaching Assistantships:</h4>
 <table>
 <thead>
 <tr class="header">
@@ -283,9 +396,6 @@ $(document).ready(function () {
 </tbody>
 </table>
 </div>
-=======
-
->>>>>>> parent of 52dd1c0... adding teaching and bio (incomplete)
 
 
 
@@ -310,7 +420,7 @@ $(document).ready(function () {
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
 </script>
