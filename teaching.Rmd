@@ -4,21 +4,27 @@ output: html_document
 </b></br>
 </b></br>
 
-####Instructor:
+
+> Instructor:
+
+
 Department/University           | Course                                                | Date
 --------------------------------|-------------------------------------------------------|--------------------------------
-Department of Economics, UAI, Chile.  | Data Science for Economics and Business. (w/ JF)          | Spring 2019
-Department of Economics, UAI, Chile.  | Microeconomics II (ECO 211).               | 2017 - present
-Department of Economics, UAI, Chile.  | Microeconomics I (ECO 201).               | 2018 - present
-Department of Economics, UAI, Chile.  | Intro to Economics II (ECO 101).          | Spring 2017.
-Department of Economics, UAI, Chile.  | R programing course for Spatial Data Analysis         | 2017 - present.
-Department of Economics, UAI, Chile.  | Workshop: Introduction to R programing          | 2017 - present.
+Department of Architecture + Planning (UTSA)  | [Planning Methods II ](https://github.com/Planning-Methods-2/Planning-Methods-2-Labs) [URP 5393]          | Spring 2022
+Department of Architecture + Planning (UTSA)  | Urban Housing Policy & Analysis [URP 5313] | Fall 2021
+Department of Economics, UAI, Chile.          | [Spatial Analytics](https://github.com/Spatial-Analytics2/Clases2)          | Spring 2019
+Department of Economics, UAI, Chile.          | Data Science for Economics and Business. (w/ JF)          | Spring 2019
+Department of Economics, UAI, Chile.          | Microeconomics II (ECO 211).               | 2017 - 2021
+Department of Economics, UAI, Chile.          | Microeconomics I (ECO 201).               | 2018 - 2021
+Department of Economics, UAI, Chile.          | Intro to Economics II (ECO 101).          | Spring 2017.
+Department of Economics, UAI, Chile.          | R programing course for Spatial Data Analysis         | 2017 - 2021
+Department of Economics, UAI, Chile.          | Workshop: Introduction to R programing          | 2017 - 2021
 Department of Geography, UIUC.  | Business Location Decisions ([GEOG 205](https://courses.illinois.edu/schedule/2016/fall/GEOG/205)).               | Fall 2016.
 Department of Geography, UIUC.  | Business Location Decisions ([GEOG 205](https://courses.illinois.edu/schedule/2015/fall/GEOG/205)).               | Fall 2015.
 
-####Teaching Assistantships: 
+> Teaching Assistantships: 
 
-Department/University  | Course:
+Department/University  | Course
 --------------------------------|-------------------------------------------------------|--------------------------------
 Department of Economics, UCN    | Econometric Applications.                             | 2008-1
 Department of Economics, UCN    | Optimization Methods.                                 | 2008-1

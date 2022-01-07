@@ -1,34 +1,48 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
 
-<title></title>
+<title>research.knit</title>
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 
-<style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
 <script type="text/javascript">
 if (window.hljs) {
   hljs.configure({languages: []});
@@ -41,37 +55,10 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
 
 
-</head>
 
-<body>
+
 
 <style type = "text/css">
 .main-container {
@@ -79,13 +66,8 @@ h6 {
   margin-left: auto;
   margin-right: auto;
 }
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
-}
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -99,40 +81,13 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+pre code {
+  padding: 0;
+}
 </style>
 
 
 <style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 51px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h2 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h3 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h4 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h5 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h6 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
 .dropdown-submenu {
   position: relative;
 }
@@ -160,7 +115,7 @@ body {
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
+  border-left-color: #adb5bd;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -172,7 +127,7 @@ body {
 }
 </style>
 
-<script>
+<script type="text/javascript">
 // manage active state of menu based on current page
 $(document).ready(function () {
   // active menu anchor
@@ -183,14 +138,25 @@ $(document).ready(function () {
   var menuAnchor = $('a[href="' + href + '"]');
 
   // mark it active
-  menuAnchor.parent().addClass('active');
+  menuAnchor.tab('show');
 
   // if it's got a parent navbar menu mark it active as well
   menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
 });
 </script>
-
-<div class="container-fluid main-container">
 
 <!-- tabsets -->
 
@@ -200,7 +166,6 @@ $(document).ready(function () {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
@@ -236,6 +201,7 @@ $(document).ready(function () {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -248,20 +214,17 @@ $(document).ready(function () {
 }
 </style>
 
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
 <!-- code folding -->
 
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
 
 
 
@@ -301,7 +264,7 @@ $(document).ready(function () {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
@@ -314,86 +277,101 @@ $(document).ready(function () {
 <p>Publications</p>
 </blockquote>
 <ol style="list-style-type: decimal">
-<li>Backman, M., <strong>Lopez, E.</strong> &amp; Rowe, F. (<em>Forthcoming</em>) “<em>Revealing Migrant pathways in the formal labor market: The case of Sweden</em>”. <strong>Journal of Small Business Economics.</strong></li>
+<li>Baker, D; <strong>Lopez, E.</strong> &amp; Greenlee, A. (2021) “An Ex-Ante model to estimate the displacement cost from Transit Oriented Developments” CITIES, Vol. 115. | <a href="https://doi.org/10.1016/j.cities.2021.103212">paper</a> | <a href="docs/slides/TOD&amp;HousingDisplacement_NARSC2019.pdf">Slides</a> | <a href="https://twitter.com/elopez8a/status/1387884163085312007?s=20">twitter thread</a>
+<details>
+<summary>
+Abstract
+</summary>
+Chicago’s South Side has long been characterized as a “transit desert” – an area with high transit inaccessibility and insufficient infrastructure to meet residents’ needs (Jiao &amp; Dillivan, 2013). Without adequate transit, residents cannot reach employment opportunities or regional amenities – contributing to economic, spatial, and social marginalization. The Chicago Transit Authority’s proposed Red Line Extension (RLE) is designed to connect the city’s far south side neighborhoods to Chicago’s core. Given the scope of the RLE, 175 parcels have been chosen for demolition, meaning that a similar number of households face displacement to make room for the RLE right of way – which may have potentially negative consequences in realizing the subsequent benefits of improved transit access. In this article, we perform an ex-ante analysis of RLE induced displacement. Specifically, we: 1) predict potential location choices that transit displacees are most likely to choose; and 2) analyze these locations in relation to access to transit, amenities, employment, and housing affordability, among others. Within the context of transportation planning, ex-ante analysis is important because it can minimize unintended and negative consequences of transit-induced displacement – like decreased transit access and a loss of potential neighborhood improvements - by predicting potential relocation choices for displacees. Such predicted choices can help planners and decision-makers better understand the trade-offs for directly affected households and thereby allow planners and decision-makers to assist in relocation assistance that maximizes the benefits of the necessarily displaced.
+</details></li>
 </ol>
-<ul>
-<li><a href="https://doi.org/10.1111/jors.12447">Paper</a> | Summary</li>
-</ul>
+<p></b></br></p>
 <ol start="2" style="list-style-type: decimal">
-<li>Bonilla, L., <strong>Lopez, E.</strong> &amp; McMillen, D. (2019) “<em>House Prices and School Choice: Evidence from the Chicago’s Magnet Schools Proximity Lottery</em>”. <strong>Journal of Regional Science</strong>.</li>
+<li>Backman, M., <strong>Lopez, E.</strong> &amp; Rowe, F. (2020) “<em>Revealing Migrant pathways in the formal labor market: The case of Sweden</em>”. <strong>Journal of Small Business Economics.56,963–983</strong> | <a href="https://doi.org/10.1007/s11187-019-00312-z">Paper</a> | <a href="https://twitter.com/elopez8a/status/1364579087625388032?s=20">twitter thread</a>
+<details>
+<summary>
+Abstract
+</summary>
+The current surge in forced migration to Europe is probably the largest and most complex since the Second World War. As population aging accelerates and fertility falls below replacement level, immigration may be seen as a key component of human capital to address labor and skill shortages. Receiving countries are, however, hesitant about the contribution that forced migrants can make to the local economy. Coupled with increasing pressure on welfare services, they are associated with increased job competition and crime. Underutilization of immigrants’ skills is, however, a waste of resources that countries can scarcely afford. Understanding the labor market integration process of forced migrants is thus critical to develop policies that unleash their full skills potential and ultimately foster local economic productivity. While prior studies have examined the employment and salary outcomes of these immigrants at a particular point in time post-migration, they have failed to capture the temporal dynamics and complexity of this process. Drawing on administrative data from Sweden, we examine the occupational pathways of forced migrants using sequence analysis from their arrival in 1991 through to 2013. Findings reveal polarized pathways of long-term labor market integration with over one-third of refugees experiencing a successful labor market integration pathway and an equally large share facing a less fruitful employment outcomes. Our findings suggest education provision is key to promote a more successful integration into the local labor market by reducing barriers of cultural proximity and increasing the occurrence of entrepreneurship activity.
+</details></li>
 </ol>
-<ul>
-<li><a href="https://doi.org/10.1111/jors.12447">Paper</a> | Summary</li>
-</ul>
+<p></b></br></p>
 <ol start="3" style="list-style-type: decimal">
-<li><strong>Lopez, E.</strong> &amp; Hewings G. (2018) “<em>Housing Price Indices for Small Spatial Units</em>” <strong>Regional Science and Urban Economics</strong>, Vol. 70, 57-71.</li>
+<li>Bonilla, L., <strong>Lopez, E.</strong> &amp; McMillen, D. (2019) “<em>House Prices and School Choice: Evidence from the Chicago’s Magnet Schools Proximity Lottery</em>”. <strong>Journal of Regional Science</strong>. <a href="https://doi.org/10.1111/jors.12447">Paper</a> | <a href="docs/slides/ELopez_MSACE_Slides.pdf">Slides</a> | <a href="https://twitter.com/elopez8a/status/1130855683203579904?s=20">twitter thread</a> | <a href="docs/slides/Lopez,Bonilla&amp;McMillen_final.ppt">poster</a> | <a href="docs/slides/NARSC-SLPA-Elopez.pdf">award</a>
+<details>
+<summary>
+Abstract
+</summary>
+Studies of open school policies predict house prices to rise in areas that gain access to high-quality schools. However, excess demand may limit access to high-quality schools. We take advantage of changes in Chicago’s schools’ admissions policies to test whether a higher probability of admission to magnet schools for students living within 1.5 miles leads to higher house prices. Results indicate that the 1997 and 2009 reforms increased house prices for homes within the 1.5 mile radius by about 4% and 12.6%, respectively. The higher probability of admission for black students after a consent decree was vacated in 2009 led to a significant increase in prices in predominantly African-American areas on the south side.
+</details></li>
 </ol>
-<ul>
-<li><a href="https://doi.org/10.1016/j.regsciurbeco.2018.02.005">Paper</a> | Summary</li>
-</ul>
+<p></b></br></p>
 <ol start="4" style="list-style-type: decimal">
-<li><strong>Lopez, E.</strong> &amp; Paredes, D. (2018) “<em>Towards Housing Policies that Consider Households’ Preferences: Estimating the Demand for Housing Attributes in Chile</em>”. <strong>International Journal of Strategic and Property Management</strong>. Vol. 22(1), 24-36.</li>
+<li><strong>Lopez, E.</strong> &amp; Hewings G. (2018) “<em>Housing Price Indices for Small Spatial Units</em>” <strong>Regional Science and Urban Economics</strong>, Vol. 70, 57-71. <a href="https://doi.org/10.1016/j.regsciurbeco.2018.02.005">Paper</a> | <a href="docs/slides/HousingPriceIndices.pdf">slides</a> | <em>research funded by the Illinois Realtor Association</em>
+<details>
+<summary>
+Abstract
+</summary>
+Median-based Housing Price Indices (HPIs) generate potentially misleading indicators especially when applied to Small Spatial Units (SSUs) such as small Metropolitan Statistical Areas (MSAs) or neighborhoods within larger metropolitan regions. Given the small total number of sales in SSUs and the even smaller number of repeat sales, traditional alternatives are few. A matching-based Fisher HPI is proposed as an alternative that provides more accurate estimations for SSUs given that it both controls for housing characteristics and is not restricted just to repeated sales. This paper makes use of housing sales data from the state of Illinois, as an example of the application of the methodology to small MSAs and at the neighborhood level within larger MSAs. The results highlight some of the biases that have arisen from the use of median price indicators.
+</details></li>
 </ol>
-<ul>
-<li><a href="https://doi.org/10.3846/ijspm.2018.320">Paper</a> | Summary</li>
-</ul>
+<p></b></br></p>
 <ol start="5" style="list-style-type: decimal">
-<li>Kleasson, J. <strong>Lopez, E.</strong> &amp; Öner, Ö. (2018) “<em>Estimating the wage premium of delayed retirement and its variations across space</em>” <strong>Tijdschrift voor economische en sociale geografie</strong>, Vol. 109 (3) 350-370.</li>
+<li><strong>Lopez, E.</strong> &amp; Paredes, D. (2018) “<em>Towards Housing Policies that Consider Households’ Preferences: Estimating the Demand for Housing Attributes in Chile</em>”. <strong>International Journal of Strategic and Property Management</strong>. Vol. 22(1), 24-36.<a href="https://doi.org/10.3846/ijspm.2018.320">Paper</a> | <a href="docs/slides/HousingDemandChile_LincolnInst.pdf">slides</a> | <em>funded by the Lincoln Institute of Land Policy (30K)</em>
+<details>
+<summary>
+Abstract
+</summary>
+Understanding household preferences for housing attributes is imperative for developing countries after years of housing policies that failed mostly due to the mismatch between housing solutions and needs. This paper provides income and price elasticity estimates of the demand for housing attributes as an indicator to measure how households perceive housing attributes (necessities or luxuries). These metrics are important because they allow evaluating previously national-level housing policies as well as suggesting new paths of action that are in accordance to households’ preferences. The study focuses on Chile because its influential role in designing housing policies in other developing countries (Gilbert, 2002). Using five cross-section household surveys from 2000–2011, our results suggest that Size and Location are perceived as basic necessities. Contrarily, Quality and Housing Features are considered luxury goods. Size and Location are more price-inelastic than other attributes. These results are consistent across regions, and suggest that households prefer larger and better-located houses.
+</details></li>
 </ol>
-<ul>
-<li><a href="http://onlinelibrary.wiley.com/doi/10.1111/tesg.12295/full">Paper</a> | Summary</li>
-</ul>
+<p></b></br></p>
 <ol start="6" style="list-style-type: decimal">
-<li><strong>Lopez, E.</strong> &amp; Greenlee, A. (2016) “<em>Residential Mobility and Location Choice as the Product of Housing Displacement: An ex ante Analysis</em>”. <strong>Applied Geography</strong>, Vol. 75, 156-175.</li>
+<li>Kleasson, J. <strong>Lopez, E.</strong> &amp; Öner, Ö. (2018) “<em>Estimating the wage premium of delayed retirement and its variations across space</em>” <strong>Tijdschrift voor economische en sociale geografie</strong>, Vol. 109 (3) 350-370. <a href="http://onlinelibrary.wiley.com/doi/10.1111/tesg.12295/full">Paper</a> | <a href="docs/slides/Klaesson,%20Lopez%20&amp;%20Oner.pdf">slides</a>
+<details>
+<summary>
+Abstract
+</summary>
+Who works longer – and why? This paper investigates the characteristics of people that stay longer in the workforce, even beyond the time they are eligible to retire. In our regional analysis, we use an 11-year balanced panel of 290 Swedish regions. In the individual analysis, we use a large individual level panel to apply Cox proportional hazard estimates on ‘risk’ of entering retirement. Our results show a large gender difference: women tend to retire earlier than men. Between employees and entrepreneurs, entrepreneurs retire later. People in larger regions tend to retire later. Higher house prices, and the share of small firms in a region correlate with a lower likelihood of retirement. The local tax rate and the share of blue-collar workers in a region is significantly related to lower retirement age. A high average wage, commuting intensity, and high human capital in a region is associated with later retirement
+</details></li>
 </ol>
-<ul>
-<li><a href="https://doi.org/10.3846/ijspm.2018.320">Paper</a> | Summary</li>
-</ul>
+<p></b></br></p>
 <ol start="7" style="list-style-type: decimal">
-<li><strong>Lopez, E.</strong> &amp; Aroca, P. (2012) “<em>Estimación de la inflación regional de los precios de la vivienda en Chile</em>”. <strong>Trimestre Económico</strong>, Vol. LXXIX (315), 601-630.</li>
+<li><strong>Lopez, E.</strong> &amp; Greenlee, A. (2016) “<em>Residential Mobility and Location Choice as the Product of Housing Displacement: An ex ante Analysis</em>”. <strong>Applied Geography</strong>, Vol. 75, 156-175. <a href="https://doi.org/10.1016/j.apgeog.2016.08.013">Paper</a> | <a href="docs/slides/ResidentialMobility-WRSA2016.pdf">slides</a>
+<details>
+<summary>
+Abstract
+</summary>
+Urban renewal has been criticized for its unintended effects on the displacement of residents to housing situations where they are worse off. The literature concerned with housing displacement focuses on after the fact (ex post) analysis of mobility, hence providing only partial insights to prospective outcomes for residents. In this article, we develop a methodology for predicting before the fact (ex ante) spatial location outcomes for residents facing forced displacement. We ask where in the city will displaced residents locate and how do potential new locations compare to the current one? We apply this methodology to an ongoing urban renewal project in Illinois in order to predict spatial relocation patterns. Our findings show that residents facing forced displacement are likely to relocate to low-priced neighborhoods that are on average as bad or worse off in terms of housing adequacy, accessibility to labor, and shopping. These findings not only bear important implications for urban redevelopment policy, but also help to reveal spatially determined costs of moving which are not factored into current redevelopment impact evaluations.
+</details></li>
 </ol>
-<ul>
-<li><a href="http://www.scielo.org.mx/scielo.php?script=sci_arttext&amp;pid=S2448-718X2012000300601">Paper</a> | Summary</li>
-</ul>
+<p></b></br></p>
+<ol start="8" style="list-style-type: decimal">
+<li><strong>Lopez, E.</strong> &amp; Aroca, P. (2012) “<em>Estimación de la inflación regional de los precios de la vivienda en Chile</em>”. <strong>Trimestre Económico</strong>, Vol. 79 (315), 601-630. <a href="https://www.jstor.org/stable/23349530">Paper</a> | <a href="docs/slides/Estimacion%20de%20la%20Inflacion%20Regional%20de%20los%20Precios%20de%20la%20Vivienda.pdf">slides</a>
+<details>
+<summary>
+Abstract
+</summary>
+La inflación ha sido permanentemente estudiada en Chile por sus efectos negativos en la economía; sin embargo su investigación es escasa por región, porque ha primado el supuesto de que las economías regionales tienen un comportamiento homogéneo respecto a la inflación. Extendiendo la metodología de Paredes y Aroca (2008) al plano temporal y utilizando información de inflación nacional producida por el Instituto Nacional de Estadísticas, este artículo contribuye con una estimación de la inflación de los precios de las viviendas de las regiones chilenas. Los resultados sugieren que las regiones además de tener distintos costos de vida (más altos para las regiones extremas que para las del centro), muestran una evolución con velocidades diferentes. Esto sugiere que la elaboración de políticas habitacionales (y potencialmente en todos los sectores) destinadas a reducir la inflación tengan efectos heterogéneos en el territorio y sean menos eficaces de las que podrían formularse considerando las diferencias inflacionarias entre las regiones. Inflation has been constantly studied at national level because its negative effects over the economy, however this problem has generally been ignored at regional scale, mainly because the assumption that regions have a homogeneous inflation behavior. Expanding the Paredes and Aroca (2008) methodology to the temporal dimension and using National Statistics Institute (INE) data, this paper contributes with an estimation of regional housing inflation for Chilean regions. Main results suggest that regions besides bear different cost of living (higher for extreme regions than those in the center), are also showing heterogeneous speed in their price evolution process. This result suggests that effects of housing policies (and potentially other sectors policies) are heterogeneous between regions and more inefficient than those that could be implemented when taking account of the different regional inflation pattern.
+</details></li>
+</ol>
+<p></b></br></p>
 <blockquote>
 <p>Working Papers</p>
 </blockquote>
-<ol style="list-style-type: decimal">
-<li>“The effect of commuting on school performance: Evidence from a country-wide school reform” with Rocío Valdebenito (UIUC) and Patricio Aroca (UAI). Submitted to Education of Economics Review</li>
-</ol>
 <ul>
-<li><a href="">Slides</a> | Summary</li>
-</ul>
-<ol start="2" style="list-style-type: decimal">
-<li>“An Ex-Ante model to estimate the displacement cost from Transit Oriented Developments” with Dwayne Baker (City University of New York) and Andrew Greenlee (UIUC). Presented at NARSC, San Antonio, TX. Nov. 2018.</li>
-</ol>
-<ul>
-<li><a href="">Slides</a> | Summary</li>
+<li>“Housing price indices from on-line data: addressing spatial posting bias with sampling weights”</li>
+<li>“Covid-19 and employment relief programs: A tale of spatially blind policies, for a spatially driven pandemic” with Patricio Aroca and Juan Eberhard. <strong>Revise and Resubmit</strong> in the Journal of Regional Science</li>
+<li>“The effect of commuting on school performance: Evidence from a country-wide school reform” with Rocío Valdebenito (UIUC) and Patricio Aroca (UAI). Preparing for resubmission</li>
 </ul>
 <blockquote>
 <p>Research in Progress</p>
 </blockquote>
-<div id="spatial-inequalities" class="section level5">
-<h5>Spatial Inequalities</h5>
 <ul>
-<li><a href="forestry1.html">Territorial Socio-Economic Impacts of Forestry Expansion in Chile </a></li>
+<li>“Measuring congestion costs between and within cities: the case of Chile” with Felipe Morales and Patricio Aroca (UAI).</li>
+<li>“When green production yields poverty: The socioeconomic effects of forestry expansion in Chile” with Leonardo Bonilla (Central Bank of Colombia.)</li>
+<li>“Estimating the spatial distribution of firm power and its effects on regional migration” with Mikaela Backman (Jönköping University, Sweden).</li>
 </ul>
-</div>
-<div id="housing" class="section level5">
-<h5>Housing</h5>
-<ul>
-<li><p><a href="hprices1.html">Housing Prices for Small Spatial Units</a></p></li>
-<li><p><a href="hattributes1.html">Estimating the Demand for Housing Attributes in Chile</a></p></li>
-</ul>
-</div>
-<div id="urban-dynamics" class="section level5">
-<h5>Urban Dynamics</h5>
-<ul>
-<li><p><a href="uresmobBristol1.html">An Ex-Ante Analysis of Location Choices due to housing Displacement: The case of Bristol Place</a></p></li>
-<li><p><a href="umigration1.html">Who works longer and why? - Regional and Individual Characteristis in the Timing of Retirement</a></p></li>
-<li><p><a href="umigration2.html">Longitudinal Analysis of Carreer Trajectories and outcomes of Forced Migrants in Sweden</a></p></li>
-</ul>
-</div>
 
 
 
@@ -404,7 +382,7 @@ $(document).ready(function () {
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
@@ -412,6 +390,23 @@ $(document).ready(function () {
 
 
 </script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

@@ -5,20 +5,21 @@ layout: default
 </b></br>
 </b></br>
 
-![](https://negocios.uai.cl/assets/uploads/2017/12/esteban-lopez-232x232-c-default.jpg)
+![](images/UTSA_profile_pic.JPG)
 
 </b></br>
 
-###Esteban López Ochoa
-</b>Profesor Asistente <br />
-</b>[Centro de Economía y Política Regional (CEPR)](http://cepr.uai.cl/equipo/esteban-lopez/) <br />
-</b>[Escuela de Negocios](https://negocios.uai.cl/profesor/esteban-lopez-ochoa/)<br/>
-</b>Universidad Adolfo Ibáñez <br />
-</b>Viña del Mar, Chile <br />
-</b>esteban.lopez at uai.cl<br />
-</b>+56 32 250 3740<br />
 
-[Curriculum Vitae](docs/Esteban_Lopez_CV.pdf)
+### [Esteban López Ochoa](https://ceid.utsa.edu/architecture-planning/team/esteban-lopez-ochoa-ph-d/)
+</b>Assistant Professor <br />
+</b>[The University of Texas at San Antonio](http://www.utsa.edu) <br />
+</b>[Klessle College of Engineering and Integrated Design](https://ceid.utsa.edu/)<br />
+</b>[School of Architecture + Planing](https://ceid.utsa.edu/architecture-planning/)<br/>
+</b>San Antonio, TX. <br />
+</b>esteban.lopezochoa at utsa.edu<br />
+
+
+[Curriculum Vitae](docs/Esteban_Lopez_CV_1_UTSA.pdf)
 
 ![http://github.com/estebanlp](images/GitHub-Mark-32px.png){width=15px}
 
